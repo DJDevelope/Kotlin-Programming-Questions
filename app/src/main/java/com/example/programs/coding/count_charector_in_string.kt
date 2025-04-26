@@ -1,7 +1,9 @@
+import kotlin.text.replace
+
 fun main() {
     println("Enter sentence") // print sentence
     val sentenceStr = readLine() ?: "" // read sentence from console
-    val sentenceToChar = sentenceStr.trim().toCharArray() // trim sentence and convert in to char array
+    val sentenceToChar = sentenceStr.replace(" ", "").toCharArray() // trim sentence and convert in to char array
 
     var tempChar :Char // declare temporary char
     var count = 0 // declare counter

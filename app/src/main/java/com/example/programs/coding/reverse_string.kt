@@ -4,7 +4,7 @@ fun main(){
     println("Enter your string here! ")
     var inputFromUser = readlnOrNull().toString()
     // prints reversed string
-    println(reverseString(inputFromUser))
+    println(reverseString(inputFromUser.replace(" ", "")))
 }
 
 fun reverseString(inputString:String): String{

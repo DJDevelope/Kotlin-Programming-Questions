@@ -1,7 +1,9 @@
+import kotlin.text.replace
+
 fun main() {
     println("Enter sentence")
     val sentenceStr = readLine() ?: ""
-    val sentenceToChar = sentenceStr.trim().toCharArray()
+    val sentenceToChar = sentenceStr.replace(" ", "").toCharArray()
 
     var tempChar :Char
     var count = 0

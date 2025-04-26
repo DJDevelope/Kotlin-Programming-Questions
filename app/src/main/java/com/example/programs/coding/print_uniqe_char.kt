@@ -2,7 +2,7 @@
 fun main() {
     println("Enter any sentence") // Print message to ask for user input.
     val sentStr = readLine() ?: "" // Read line from console or set empty string if null
-    val sentTOChar = sentStr.toCharArray() // Convert the input string to an array of characters.
+    val sentTOChar = sentStr.replace(" ", "").toCharArray() // Convert the input string to an array of characters.
 
     var tempChar : Char // Variable to hold the current character being checked.
     var count = 0 // Variable to count the occurrences of the current character.
