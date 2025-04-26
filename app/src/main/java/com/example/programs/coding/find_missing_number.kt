@@ -17,7 +17,7 @@ fun main() {
             result = numbers[index + 1] - value // difference between next and current value
         }
 
-        if(tempResult != result){ // check if tempresult is not equals result
+        if(tempResult != result && missingValue ==0){ // check if tempresult is not equals result
             if(tempResult == 0 && tempResult != result){ // when temp result is 0 and result is not equal to 0
                 tempResult = result // initialize temp result with result
             }else { // if tempresult is not 0
@@ -28,6 +28,7 @@ fun main() {
                 }
             }
         }
+
     }
 
 
