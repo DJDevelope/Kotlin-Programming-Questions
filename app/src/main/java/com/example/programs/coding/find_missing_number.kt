@@ -9,8 +9,6 @@ fun main() {
     var tempResult = 0
     var missingValue = 0
 
-
-
     numbers.forEachIndexed { index, value ->
 
         if (index + 1 < numbers.size) {
@@ -30,8 +28,5 @@ fun main() {
         }
 
     }
-
-
     println("Missing value is: ${missingValue}")
-
 }
